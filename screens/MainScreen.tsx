@@ -1,18 +1,13 @@
-import { NavigationContainer } from "@react-navigation/native";
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import Navigation from "./navigation/Navigation";
-
-export default function App() {
+import GLViewComp from "../components/GLViewComp";
+export default function MainScreen() {
   return (
     <View style={styles.container}>
-      <NavigationContainer>
-        <Navigation />
-      </NavigationContainer>
+      <Text>Mainscreen</Text>
+      <GLViewComp />
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -20,4 +15,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  glview:{
+
+  }
 });
